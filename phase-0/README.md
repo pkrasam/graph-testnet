@@ -16,8 +16,3 @@ Next Steps:
 
 Feedback:
 - during the 3 week period for each phase, it might be helpful to have an AMA session w/ the graph team so we can learn faster and focus on getting more done in the testnet phase
-
-Links:
-Graph node endpoint: 
-
-Prometheus endpoint: 
