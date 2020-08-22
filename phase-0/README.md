@@ -18,8 +18,11 @@ Feedback:
 - during the 3 week period for each phase, it might be helpful to have an AMA session w/ the graph team so we can learn faster and focus on getting more done in the testnet phase
 
 Endpoint:
+
 indexer: http://indexer.pkrasam.co/
+
 promethus: http://grafana.pkrasam.co/
+
 prometheus: http://prometheus.pkrasam.co/
 
 jannis-gravity
