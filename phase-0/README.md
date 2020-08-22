@@ -86,4 +86,50 @@ r2
 ```
 r3
 ```
+{
+  "data": {
+    "members": [
+      {
+        "id": "0x0039f22efb07a647557c7c5d17854cfd6d489ef3"
+      },
+      {
+        "id": "0x02cb3c150bedca124d0ae8cccb72fefbe705c953"
+      },
+      {
+        "id": "0x04576eb9aff2be4122d1ba870eea8db4573a97d9"
+      },
+      ...
+```
+r4
+```
+{
+  "data": {
+    "members": [
+      {
+        "id": "0x0039f22efb07a647557c7c5d17854cfd6d489ef3",
+        "votes": [
+          {
+            "id": "0x0039f22efb07a647557c7c5d17854cfd6d489ef3-112",
+            "proposalIndex": "112"
+          }
+        ]
+      },
+      {
+        "id": "0x02cb3c150bedca124d0ae8cccb72fefbe705c953",
+        "votes": []
+      },
+      {
+        "id": "0x04576eb9aff2be4122d1ba870eea8db4573a97d9",
+        "votes": []
+      },
+      ...
+```
+r5
+```
+```
+r6
+```
+```
+r7
+```
 ```
