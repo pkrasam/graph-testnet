@@ -9,6 +9,8 @@ I chose this method of creating a github repository, a place to document my find
 ### phase 0
 Running an Indexer
 
+**endpoints**
+
 indexer: http://indexer.pkrasam.co
 
 grafana: http://grafana.pkrasam.co
@@ -16,13 +18,13 @@ grafana: http://grafana.pkrasam.co
 prometheus: http://prometheus.pkrasam.co
 
 
-[jannis/gravity](http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql)
+subgraph 1: [jannis/gravity](http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql)
 
-[molochventures/moloch](http://indexer.pkrasam.co/subgraphs/name/molochventures/moloch/graphql)
+subgraph 2: [molochventures/moloch](http://indexer.pkrasam.co/subgraphs/name/molochventures/moloch/graphql)
 
-[uniswap/uniswap-v2](http://indexer.pkrasam.co/subgraphs/name/uniswap/uniswap-v2/graphql)
+subgraph 3: [uniswap/uniswap-v2](http://indexer.pkrasam.co/subgraphs/name/uniswap/uniswap-v2/graphql)
 
-[synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/name/synthetixio-team/synthetix/graphql)
+subgraph 4: [synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/name/synthetixio-team/synthetix/graphql)
 
 
 ### phase 1
