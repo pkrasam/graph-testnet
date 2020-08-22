@@ -37,6 +37,8 @@ prometheus: http://prometheus.pkrasam.co
 
 
 **Queries:**
+[q1, q2, q3, q4, q5, q6, q7]
+
 ```
 QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,{ votes { id } }
 QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,{ proposals { id } }
@@ -48,6 +50,7 @@ QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP,"{ swaps(where: { timestamp_gt: "
 ```
 
 **Results:**
+[r1, r2, r3, r4, r5, r6, r7]
 
 r1
 ```
