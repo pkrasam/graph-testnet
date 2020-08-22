@@ -9,14 +9,20 @@ I chose this method of creating a github repository, a place to document my find
 ### phase 0
 Running an Indexer
 
-indexer: http://indexer.pkrasam.co/
+indexer: http://indexer.pkrasam.co
 
-promethus: http://grafana.pkrasam.co/
+grafana: http://grafana.pkrasam.co
 
-prometheus: http://prometheus.pkrasam.co/
+prometheus: http://prometheus.pkrasam.co
 
-[jannis-gravity](http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql?query=%23%20Query%20body%0Aquery%20%7B%0A%20%20gravatars(first%3A%205)%20%7B%0A%20%20%20%20id%0A%20%20%20%20owner%0A%20%20%20%20displayName%0A%20%20%20%20imageUrl%0A%20%20%7D%0A%7D%0A)
 
+[jannis/gravity](http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql)
+
+[molochventures/moloch](http://indexer.pkrasam.co/subgraphs/name/molochventures/moloch/graphql)
+
+[uniswap/uniswap-v2](http://indexer.pkrasam.co/subgraphs/name/uniswap/uniswap-v2/graphql)
+
+[synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/name/synthetixio-team/synthetix/graphql)
 
 
 ### phase 1
