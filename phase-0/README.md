@@ -43,10 +43,10 @@ prometheus: http://prometheus.pkrasam.co
 QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,{ votes { id } }
 QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,{ proposals { id } }
 QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,{ members { id } }
-QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,"{ members { id votes(where: {timestamp_gt: ""1234""}) { id proposalIndex } } }"
+QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9,{ members { id votes(where: {timestamp_gt: "1234"}) { id proposalIndex } } }
 QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP,{ uniswapFactories(first: 5) { id pairCount totalVolumeUSD } tokens(first: 5) { id symbol name decimals } }
 QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP,{ users(orderBy: usdSwapped) { id usdSwapped } }
-QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP,"{ swaps(where: { timestamp_gt: ""10000""}) { pair { token0 { name } token1 { name } } } }"
+QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP,{ swaps(where: { timestamp_gt: "10000"}) { pair { token0 { name } token1 { name } } } }
 ```
 
 **Results:**
@@ -126,10 +126,82 @@ r4
 ```
 r5
 ```
+{
+  "data": {
+    "tokens": [
+      {
+        "decimals": "0",
+        "id": "0x0000000000004946c0e9f43f4dee607b0ef1fa1c",
+        "name": "Chi Gastoken by 1inch",
+        "symbol": "CHI"
+      },
+      {
+        "decimals": "18",
+        "id": "0x0000000000085d4780b73119b644ae5ecd22b376",
+        "name": "TrueUSD",
+        "symbol": "TUSD"
+      },
+      {
+        "decimals": "2",
+        "id": "0x0000000000b3f879cb30fe243b4dfee438691c04",
+        "name": "Gastoken.io",
+        "symbol": "GST2"
+      },
+      ...
 ```
 r6
 ```
+{
+  "data": {
+    "users": [
+      {
+        "id": "0x0000000000000000000000000000000000000000",
+        "usdSwapped": "0"
+      },
+      {
+        "id": "0x000206732258d7511fa624127228e6a032718e62",
+        "usdSwapped": "0"
+      },
+      {
+        "id": "0x0006e4548aed4502ec8c844567840ce6ef1013f5",
+        "usdSwapped": "0"
+      },
+      ...
 ```
 r7
 ```
+{
+  "data": {
+    "swaps": [
+      {
+        "pair": {
+          "token0": {
+            "name": "UniBright"
+          },
+          "token1": {
+            "name": "Wrapped Ether"
+          }
+        }
+      },
+      {
+        "pair": {
+          "token0": {
+            "name": "6ix9ine Chain"
+          },
+          "token1": {
+            "name": "Wrapped Ether"
+          }
+        }
+      },
+      {
+        "pair": {
+          "token0": {
+            "name": "UniBright"
+          },
+          "token1": {
+            "name": "Wrapped Ether"
+          }
+        }
+      },
+      ...
 ```
