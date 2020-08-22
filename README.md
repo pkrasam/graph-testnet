@@ -15,7 +15,8 @@ promethus: http://grafana.pkrasam.co/
 
 prometheus: http://prometheus.pkrasam.co/
 
-jannis-gravity: http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql
+[jannis-gravity](http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql?query=%23%20Query%20body%0Aquery%20%7B%0A%20%20gravatars(first%3A%205)%20%7B%0A%20%20%20%20id%0A%20%20%20%20owner%0A%20%20%20%20displayName%0A%20%20%20%20imageUrl%0A%20%20%7D%0A%7D%0A)
+
 
 
 ### phase 1
