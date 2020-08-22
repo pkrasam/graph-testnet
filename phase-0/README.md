@@ -18,19 +18,10 @@ Feedback:
 - during the 3 week period for each phase, it might be helpful to have an AMA session w/ the graph team so we can learn faster and focus on getting more done in the testnet phase
 
 Endpoint:
-```
-default: 35.238.171.161
-index: 34.68.144.237
-query: 34.70.60.47
-```
+indexer: http://indexer.pkrasam.co/
+promethus: http://grafana.pkrasam.co/
+prometheus: http://prometheus.pkrasam.co/
 
-GCP Installation Outputs:
-C0
-```
-kubectl config use-context $(kubectl config get-contexts --output='name' | grep $indexer)
-```
-O0
-```
-Switched to context "gke_w3m-graph_us-central1-a_w3m-indexer".
-```
+jannis-gravity
+http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql
 
