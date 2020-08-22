@@ -15,6 +15,8 @@ promethus: http://grafana.pkrasam.co/
 
 prometheus: http://prometheus.pkrasam.co/
 
+jannis-gravity: http://indexer.pkrasam.co/subgraphs/name/jannis/gravity/graphql
+
 
 ### phase 1
 Stakiing, Basic Actions & Customizations
