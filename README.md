@@ -9,6 +9,13 @@ I chose this method of creating a github repository, a place to document my find
 ### phase 0
 Running an Indexer
 
+indexer: http://indexer.pkrasam.co/
+
+promethus: http://grafana.pkrasam.co/
+
+prometheus: http://prometheus.pkrasam.co/
+
+
 ### phase 1
 Stakiing, Basic Actions & Customizations
 
