@@ -31,11 +31,18 @@ subgraph 4: [synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/nam
 ![cli test queries](https://raw.githubusercontent.com/pkrasam/graph-testnet/master/images/phase-0-cli-test-queries.png "cli test queries")
 
 
-**check if to see if you subgraph is making progress:**
+**cli test results:**
+![cli test results](https://raw.githubusercontent.com/pkrasam/graph-testnet/master/images/phase-0-cli-test-results.png "cli test results")
+
+
+**check if to see how the subgraph is making progress:**
 [![asciicast](https://asciinema.org/a/355069.svg)](https://asciinema.org/a/355069)
+
 
 **quick peek into the indexer node logs:**
 [![asciicast](https://asciinema.org/a/355076.svg)](https://asciinema.org/a/355076)
+
+---------------------------------------
 
 ### phase 1
 Stakiing, Basic Actions & Customizations
