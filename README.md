@@ -29,6 +29,8 @@ subgraph 4: [synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/nam
 **check if to see if you subgraph is making progress:**
 [![asciicast](https://asciinema.org/a/355069.svg)](https://asciinema.org/a/355069)
 
+**quick peek into the indexer node logs:**
+[![asciicast](https://asciinema.org/a/355076.svg)](https://asciinema.org/a/355076)
 
 ### phase 1
 Stakiing, Basic Actions & Customizations
