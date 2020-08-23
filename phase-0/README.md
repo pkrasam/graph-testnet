@@ -320,3 +320,24 @@ results-hc1
   }
 }
 ```
+
+url-hc2
+```
+http://prometheus.pkrasam.co/federate?match[]=subgraph_query_execution_time_count&match[]=subgraph_count&match[]=QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP_sync_total_secs&match[]=Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx_sync_total_secs&match[]=QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9_sync_total_secs
+```
+results-hc2
+```
+# TYPE QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9_sync_total_secs untyped
+QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9_sync_total_secs{instance="172.21.0.1:8140",job="thegraph"} 0 1598143894622
+# TYPE QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP_sync_total_secs untyped
+QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP_sync_total_secs{instance="172.21.0.1:8140",job="thegraph"} 70340.89442826265 1598143894622
+# TYPE Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx_sync_total_secs untyped
+Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx_sync_total_secs{instance="172.21.0.1:8140",job="thegraph"} 69984.2894548387 1598143894622
+# TYPE subgraph_count untyped
+subgraph_count{instance="172.21.0.1:8140",job="thegraph"} 3 1598143894622
+subgraph_count{instance="172.21.0.1:8040",job="thegraph"} 1 1598143903200
+# TYPE subgraph_query_execution_time_count untyped
+subgraph_query_execution_time_count{instance="172.21.0.1:8040",job="thegraph",subgraph_deployment="QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9"} 2874 1598143903200
+subgraph_query_execution_time_count{instance="172.21.0.1:8040",job="thegraph",subgraph_deployment="subgraphs"} 11 1598143903200
+subgraph_query_execution_time_count{instance="172.21.0.1:8040",job="thegraph",subgraph_deployment="QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP"} 2059 1598143903200
+```
