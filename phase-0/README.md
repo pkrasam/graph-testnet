@@ -341,3 +341,81 @@ subgraph_query_execution_time_count{instance="172.21.0.1:8040",job="thegraph",su
 subgraph_query_execution_time_count{instance="172.21.0.1:8040",job="thegraph",subgraph_deployment="subgraphs"} 11 1598143903200
 subgraph_query_execution_time_count{instance="172.21.0.1:8040",job="thegraph",subgraph_deployment="QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP"} 2059 1598143903200
 ```
+
+url-hc3
+```
+http post indexer.pkrasam.co:8030/graphql \query='{ indexingStatuses { subgraph node synced fatalError { message } health chains { ... on EthereumIndexingStatus { latestBlock { number } } } } }'
+```
+results-hc3
+```
+HTTP/1.1 200 OK
+access-control-allow-headers: Content-Type, User-Agent
+access-control-allow-methods: GET, OPTIONS, POST
+access-control-allow-origin: *
+content-length: 757
+content-type: application/json
+date: Sun, 23 Aug 2020 01:11:13 GMT
+
+{
+    "data": {
+        "indexingStatuses": [
+            {
+                "chains": [
+                    {
+                        "latestBlock": {
+                            "number": "10703663"
+                        }
+                    }
+                ],
+                "fatalError": null,
+                "health": "healthy",
+                "node": "default",
+                "subgraph": "QmbeDC4G8iPAUJ6tRBu99vwyYkaSiFwtXWKwwYkoNphV4X",
+                "synced": true
+            },
+            {
+                "chains": [
+                    {
+                        "latestBlock": {
+                            "number": "6857689"
+                        }
+                    }
+                ],
+                "fatalError": null,
+                "health": "healthy",
+                "node": "index_node",
+                "subgraph": "Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx",
+                "synced": false
+            },
+            {
+                "chains": [
+                    {
+                        "latestBlock": {
+                            "number": "10703663"
+                        }
+                    }
+                ],
+                "fatalError": null,
+                "health": "healthy",
+                "node": "index_node",
+                "subgraph": "QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9",
+                "synced": true
+            },
+            {
+                "chains": [
+                    {
+                        "latestBlock": {
+                            "number": "10253283"
+                        }
+                    }
+                ],
+                "fatalError": null,
+                "health": "healthy",
+                "node": "index_node",
+                "subgraph": "QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP",
+                "synced": false
+            }
+        ]
+    }
+}
+```
