@@ -26,6 +26,9 @@ subgraph 3: [uniswap/uniswap-v2](http://indexer.pkrasam.co/subgraphs/name/uniswa
 
 subgraph 4: [synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/name/synthetixio-team/synthetix/graphql)
 
+**check if to see if you subgraph is making progress:**
+[![asciicast](https://asciinema.org/a/355069.svg)](https://asciinema.org/a/355069)
+
 
 ### phase 1
 Stakiing, Basic Actions & Customizations
