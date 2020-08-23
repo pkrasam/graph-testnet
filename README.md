@@ -26,6 +26,11 @@ subgraph 3: [uniswap/uniswap-v2](http://indexer.pkrasam.co/subgraphs/name/uniswa
 
 subgraph 4: [synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/name/synthetixio-team/synthetix/graphql)
 
+
+**cli test queries:**
+![cli test queries](https://raw.githubusercontent.com/pkrasam/graph-testnet/master/images/phase-0-cli-test-queries.png "cli test queries")
+
+
 **check if to see if you subgraph is making progress:**
 [![asciicast](https://asciinema.org/a/355069.svg)](https://asciinema.org/a/355069)
 
