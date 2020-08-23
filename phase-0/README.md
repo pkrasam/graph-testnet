@@ -205,3 +205,118 @@ r7
       },
       ...
 ```
+
+
+**Additional Tests:**
+
+url-hc1
+```
+http://indexer.pkrasam.co/index-node/graphql/playground?query=%7B%0A%20%20indexingStatuses(subgraphs%3A%20%5B%22QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9%22%2C%20%22Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx%22%2C%20%22QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP%22%2C%20%22QmbeDC4G8iPAUJ6tRBu99vwyYkaSiFwtXWKwwYkoNphV4X%22%5D)%20%7B%0A%20%20%20%20health%0A%20%20%20%20synced%0A%20%20%20%20subgraph%0A%20%20%20%20fatalError%20%7B%0A%20%20%20%20%20%20message%0A%20%20%20%20%7D%0A%20%20%20%20chains%20%7B%0A%20%20%20%20%20%20network%0A%20%20%20%20%20%20chainHeadBlock%20%7B%0A%20%20%20%20%20%20%20%20number%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20latestBlock%20%7B%0A%20%20%20%20%20%20%20%20number%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20lastHealthyBlock%20%7B%0A%20%20%20%20%20%20%20%20number%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
+```
+
+query-hc1
+```
+{
+  indexingStatuses(subgraphs: ["QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9", "Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx", "QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP", "QmbeDC4G8iPAUJ6tRBu99vwyYkaSiFwtXWKwwYkoNphV4X"]) {
+    health
+    synced
+    subgraph
+    fatalError {
+      message
+    }
+    chains {
+      network
+      chainHeadBlock {
+        number
+      }
+      latestBlock {
+        number
+      }
+      lastHealthyBlock {
+        number
+      }
+    }
+  }
+}
+```
+results-hc1
+```
+{
+  "data": {
+    "indexingStatuses": [
+      {
+        "chains": [
+          {
+            "chainHeadBlock": {
+              "number": "10703663"
+            },
+            "lastHealthyBlock": null,
+            "latestBlock": {
+              "number": "10703663"
+            },
+            "network": "mainnet"
+          }
+        ],
+        "fatalError": null,
+        "health": "healthy",
+        "subgraph": "QmbeDC4G8iPAUJ6tRBu99vwyYkaSiFwtXWKwwYkoNphV4X",
+        "synced": true
+      },
+      {
+        "chains": [
+          {
+            "chainHeadBlock": {
+              "number": "10703663"
+            },
+            "lastHealthyBlock": null,
+            "latestBlock": {
+              "number": "6856689"
+            },
+            "network": "mainnet"
+          }
+        ],
+        "fatalError": null,
+        "health": "healthy",
+        "subgraph": "Qme2hDXrkBpuXAYEuwGPAjr6zwiMZV4FHLLBa3BHzatBWx",
+        "synced": false
+      },
+      {
+        "chains": [
+          {
+            "chainHeadBlock": {
+              "number": "10703663"
+            },
+            "lastHealthyBlock": null,
+            "latestBlock": {
+              "number": "10703663"
+            },
+            "network": "mainnet"
+          }
+        ],
+        "fatalError": null,
+        "health": "healthy",
+        "subgraph": "QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9",
+        "synced": true
+      },
+      {
+        "chains": [
+          {
+            "chainHeadBlock": {
+              "number": "10703663"
+            },
+            "lastHealthyBlock": null,
+            "latestBlock": {
+              "number": "10251057"
+            },
+            "network": "mainnet"
+          }
+        ],
+        "fatalError": null,
+        "health": "healthy",
+        "subgraph": "QmXKwSEMirgWVn41nRzkT3hpUBw29cp619Gx58XW6mPhZP",
+        "synced": false
+      }
+    ]
+  }
+}
+```
