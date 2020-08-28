@@ -47,6 +47,8 @@ subgraph 4: [synthetixio-team/synthetix](http://indexer.pkrasam.co/subgraphs/nam
 ### phase 1
 Stakiing, Basic Actions & Customizations
 
+![graph indexer status](https://raw.githubusercontent.com/pkrasam/graph-testnet/master/images/graph-indexer-status-thegraph-ml.png "graph indexer status")
+
 ### phase 2
 Honest Profit Maximization
 
